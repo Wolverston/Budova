@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Будова</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css"> 
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<main class="main-page">
+		<div class="header-wrapper">
+			<div class="container-fluid header">
+				<div class="logo"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="contacts">
+							<div class="phones">
+								+38 (048) <span>770 34 30</span><br>
+								+38 (067) <span>518 90 09</span>
+							</div>
+							<div class="phone">
+								<img src="img/phone.svg" alt="">
+							</div>
+							<div class="phones">
+								+38 (063) <span>913 66 43</span><br>
+								+38 (099) <span>785 82 48</span>
+							</div>
+							<a class="button call-us" data-toggle="modal" data-target="#myModal">Перезвоните мне</a>
+
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<div class="modal-body call-us-content">
+											<h4>Заказать звонок</h4>
+											<p>Напишите свое имя и контактный номер телефона и наши менеджеры свяжутся с вами!</p>
+											<form method="post">
+												<input class="modal-input" type="text" placeholder="Имя*" required> 
+												<input class="modal-input" type="number" placeholder="Телефон*" required  onkeydown="return FilterInput(event)" onpaste="handlePaste(event)">
+												<input class="button confirm" type="submit" value='Заказать'>
+											</form>
+								    	</div>
+							    	</div>
+								</div>
+							</div>
+
+							<div id="nav-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="nav">
+					<a href="#" class="active">
+						<li>О&nbsp;компании</li>
+					</a>
+					<a href="#">
+						<li>Новостройки</li>
+					</a>
+					<a href="#">
+						<li>Квартиры</li>
+					</a>
+					<a href="#">
+						<li>Цены</li>
+					</a>
+					<a href="#">
+						<li>Контакты</li>
+					</a>
+				</ul>
+			</div>
+			<div class="application">
+				<div class='rotatable'>Оставить&nbsp;заявку</div>
+				<div class="application-panel">
+					<form action="">
+						<input type="text" placeholder="Ваше имя">
+						<input type="email" placeholder="Ваш email">
+						<textarea placeholder="Ваше сообщение"></textarea>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="carousel" class="carousel slider slide carousel-fade" data-ride="carousel" data-interval="false">
+			<div class="carousel-inner" role="listbox">
+				<div class="item slide1 active">
+					<img src="img/slide1.jpg">
+				</div>
+				<div class="item slide2">
+					<img src="img/slide2.jpg">
+				</div> 
+				<div class="item slide3">
+					<img src="img/slide3.jpg">
+				</div>
+			</div>
+		</div>
+
+		
+		<div class='slider-name'>
+			<a class="carousel-control left" href="#carousel" role="button" data-slide="prev">
+				<img src="img/arrowleft.svg" alt="">
+				<span class="sr-only">Previous</span>
+			</a>
+			<div class="text">Продажа недвижимости от официального представителя строительной компании</div>
+			<a class="carousel-control right" href="#carousel" role="button" data-slide="next">
+				<img src="img/arrowright.svg" alt="">
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div class="new-buildings">
+			<h2>Новые объекты</h2>
+			<p>от строительной компании «Будова»</p>
+			<div class="container"> 
+				<div class="row gallery"> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/1.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+
+							<div class="text">
+								<h5>ЖК «Мандарин»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/2.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Четыре сезона»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/3.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Новый берег»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/4.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Альтаир. Звездный городок»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/5.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Альтаир-2»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/6.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Гольфстрим. Дом на Генуэзской»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/7.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Бельэтаж. Дом на Белинского»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/8.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Апельсин»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/9.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Неизвестный»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div> 
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb"> 
+					<!-- <a class="fancyimage" rel="group" href="img.png" -->
+						<a href="#"> 
+							<div class="image-wrapper">
+								<img class="img-responsive" src="img/10.jpg" alt="">
+								<div class="image-more">Подробнее о ЖК <img src="img/arrowright.svg" alt=""></div>
+							</div>
+							<div class="text">
+								<h5>ЖК «Таинственный»</h5>
+								<p>Район: <span>Приморский</span></p>
+								<p>Срок сдачи: <span>II квартал 2017 года</span></p>
+								<p>Цена от: <span class="price">21 770 <span class="pricetext">грн./м</span><sup>2</sup></span></p>
+							</div>
+						</a> 
+					</div>  
+				</div> 
+			</div> 
+		</div>
+
+		<div class="budova-realty">
+			<h2>Недвижимость от СК «Будова»</h2>
+			<p class="realty-text">Современная пластическая хирургия и эстетическая медицина помогают решать самые сложные задачи коррекции внешности. Проблемы многих пациентов сегодня становятся решаемыми при использовании новых технологий и современной аппаратуры. Теперь безопасная пластическая операция  и качественное обновление состояния лица и тела и исправление внешних недостатков доступно и в Украине в клинике доктора Патлажана. За 16 лет успешной работы пластический хирург Патлажан Геннадий Игоревич овладел успешными методиками выполнения пластических операций и поставил их на службу своим пациентам. Сегодня пластическая хирургия – одна из самых инновационных отраслей медицины. Каждый год в этой области происходят новые открытия, внедряются современные эффективные технологии, которые позволяют решать самые сложные задачи коррекции внешности. Пациенты доктора Патлажана обращаются к пластическому хирургу с самыми различными проблемами. Высокая квалификация и обширный практический опыт доктора помогают решать сложные эстетические задачи и исправить серьезные недостатки внешности.</p>
+			<div class="button-wrapper backgrounded">
+				<button class="button read-more">Читать подробнее</button>
+			</div>
+		</div>
+		
+		<div class="experience">
+			<div>
+				<p>Наш опыт работы на рынке недвижимости 15 лет</p>
+				<hr>
+				<p>Партнер СК «Будова»</p>
+				<hr>
+				<p>Стоимость квартир от застройщика, оформление 0%</p>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-overlay"></div>
+			<div class="footer-content">
+				<div class="footer-nav">
+					<ul>
+						<a href="#">
+							<li>О компании</li>
+						</a>
+						<a href="#">
+							<li>Новостройки</li>
+						</a>
+						<a href="#">
+							<li>Вторичная&nbsp;недвижимость</li>
+						</a>
+						<a href="#">
+							<li>Цены</li>
+						</a>
+						<a href="#">
+							<li>Контакты</li>
+						</a>
+					</ul>
+				</div>
+				<div class="consultations">
+					<p class="managers">
+						Консультации менеджеров:
+					</p>
+						<div class="phones">
+							+38 (048) <span>770 34 30</span><br>
+							+38 (067) <span>518 90 09</span>
+						</div>
+						<div class="phones">
+							+38 (063) <span>913 66 43</span><br>
+							+38 (099) <span>785 82 48</span>
+						</div>
+
+				</div>
+				<div class="address">
+					<p>Украина, г. Одесса <br>
+						пр. Шевченка, 7 </p>
+					<p>Мы в соцсетях: <br>
+					<a href="https://vk.com/avada.media"><img src="img/vkontakte.svg" alt="Мы ВКонтакте"></a>
+					<a href="https://www.facebook.com/avada.media"><img src="img/facebook.svg" alt="Мы в Facebook"></a></p>
+				</div>
+			</div>
+			<p class="copyright"><span>©</span> 2016 Вся Будова. Сайт разработан: AVADA-MEDIA</p>
+		</footer>
+	</main>
+		<div class="scroller">
+		</div>
+</body>
+</html>
